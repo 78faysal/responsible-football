@@ -26,7 +26,7 @@ body{
     padding: 10px;
     margin-left: 157px;
 }
-.bennar-text a:hover{
+.bennar-text a:hover, .highlights-text a:hover{
     background-color: #8a0435;
 }
 .bennar-text h1{
@@ -53,7 +53,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-left: 130px;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-right: 100px;
 }
 .player{
@@ -65,4 +65,179 @@ body{
 }
 .player img{
     width: 330px;
+}
+/*------------------------------
+    |   highlights styles   |
+--------------------------------*/
+.highlights{
+    display: flex;
+    margin: 120px;
+}
+.highlights-heading{
+    font-size: 48px;
+    line-height: 60px;
+}
+.highlights-pas{
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+}
+.highlights-text a{
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px;
+}
+.highlights-img img{
+    width: 567px;
+    height: 427px;
+}
+/*----------------------
+  |  footer styles  |
+------------------------*/
+.footer-design{
+    width: 483.87px;
+    height: 213px;
+    margin-left: 32%;
+    margin-top: 20px;
+}
+.footer-img img{
+    width: 80%;
+}
+.footer-icon{
+    margin-left: 32%;
+}
+.footer-icon img{
+    width: 10%;
+}
+.footer-design p{
+    margin-left:  26%;
+    margin-top: 0px;
+}
+/*---------------------------------------
+         Media quaries styles 
+-----------------------------------------*/
+/*----------------------
+     Mobile devices 
+------------------------*/
+@media screen and (max-width: 688px) {
+    .top-bennar{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .bennar-text h1{
+        width: 278px;
+        height: 130px;
+        margin-left: 5px;
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    .bennar-text a{
+        margin: 5px;
+        width: 160px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .bennar-img img{
+        width: 285px;
+        height: 259.17px;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 30%;
+        margin-left: 5px;
+    }
+    .highlights{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 3px;
+    }
+    .highlights-heading{
+        font-size: 30px;
+        width: 292px;
+    }
+    .highlights-pas{
+        width: 292px;
+        font-size: 16px;
+    }
+    .highlights-img img{
+        width: 328px;
+        height: 248px;
+        margin-top: 30px;
+    }
+    .footer-design{
+        width: 50%;
+        height: 90%;
+    }
+    .footer-design p{
+        font-size: 10px;
+        margin-left: 12%;
+        margin-bottom: 0px;
+    }
+}
+/*---------------------------------------
+         Media quaries styles 
+-----------------------------------------*/
+/*----------------------
+     Tablet devices 
+------------------------*/
+@media screen and (min-width:688px) and (max-width:992px){
+    .top-bennar{
+        width: 100%;
+    }
+    .bennar-text h1{
+        width: 278px;
+        height: 120px;
+        margin-left: 100px;
+        font-size: 33px;
+        margin-top: 100px;
+    }
+    .bennar-text a{
+        position: relative;
+        margin: 5px;
+        margin-left: 100px;
+        
+    }
+    .bennar-img img{
+        width: 285px;
+        height: 259.17px;
+        margin-top: 30px;
+        padding-left: 20px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 30px;
+    }
+    .highlights{
+        margin: 5px;
+    }
+    .highlights-text{
+        width: 300px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .highlights-heading{
+        font-size: 28px;
+        width: 292px;
+    }
+    .highlights-pas{
+        width: 292px;
+        font-size: 16px;
+    }
+    .highlights-img img{
+        width: 415px;
+        height: 310px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .footer-design{
+        width: 50%;
+        height: 90%;
+    }
+
 }
